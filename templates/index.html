@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encrypt / Decrypt</title>
+</head>
+<body>
+    <h1>Encrypt / Decrypt Text</h1>
+    <form method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter your text here..."></textarea><br><br>
+        <button type="submit" name="action" value="encrypt">Encrypt</button>
+        <button type="submit" name="action" value="decrypt">Decrypt</button>
+    </form>
+    {% if result %}
+        <h2>Result:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
